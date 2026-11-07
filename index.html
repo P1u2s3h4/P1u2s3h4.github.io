@@ -1,50 +1,55 @@
+<!DOCTYPE html>
 <html>
- <head>
- <title>Title of the document</title>
- <style>
- #defaultBlock {
- display: table;
+<head>
+    <title>My Main Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .column {
+            width: 33.33%;
+            height: 500px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .column1 {
+            background-color: #B5D76A;
+        }
+        .column2 {
+            background-color: #83D9D9;
+        }
+        .column3 {
+            background-color: #D9A6DC;
+        }
+    </style>
+</head>
+<body>
+<h1>Main Page Title</h1>
+<div class="container">
+    <div class="column column1">
+        <h2>Title 1</h2>
+        <!-- FIRST WEATHER WIDGET -->
+        PASTE YOUR FIRST WEATHER WIDGET CODE HERE
+    </div>
+    <div class="column column2">
+        <h2>Title 2</h2>
+        <!-- SECOND WEATHER WIDGET -->
+        PASTE YOUR SECOND WEATHER WIDGET CODE HERE
+    </div>
+    <div class="column column3">
+        <h2>Title 3</h2>
+        <!-- THIRD WEATHER WIDGET -->
+        PASTE YOUR THIRD WEATHER WIDGET CODE HERE
+    </div>
+</div>
+</body>
+</html>
 
- }
- div {
- float: left;
- height: 470px;
- width: 300px;
- padding: 10px;
- }
- #block1 {
- background-color: #F54927;
- }
- #block2 {
- background-color: #08872B;
- width: 250px;
- }
- #block3 {
- background-color: #C7A60B;
- width: 250p
-
-   }
- h2 {
- text-align: center;
- }
- </style>
- </head>
- <body>
- <main id="defaultBlock">
- <h2>Main Page Title</h2>
- <div id="block1">
-  <div id="ww_ba9cf5909861d" v='1.3' loc='id' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>More forecasts: <a href="https://meteolongue.com/paris_meteo_25_jours/" id="ww_ba9cf5909861d_u" target="_blank">Météo 25 jours</a></div><script async src="https://app3.weatherwidget.org/js/?id=ww_ba9cf5909861d"></script>
- <h2>Title 1</h2>
- Random Text
- </div>
- <div id="block2">
- <h2>Title 2</h2>
-content
- </div>
- <div id="block3">
- <h2>Title 3</h2>
- content
- </div>
- </main>
- </body>
-</html
