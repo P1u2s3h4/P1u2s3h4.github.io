@@ -4,19 +4,29 @@
     <title>My Main Page</title>
     <style>
         body {
-            background-color: white;
-            font-family: Arial;
+            background-color: red;
+            font-family: Arial, sans-serif;
             text-align: center;
+            margin: 0;
+        }
+        h1 {
+            color: white;
+            padding: 15px;
         }
         .container {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             width: 100%;
+            gap: 5px;
+            padding: 5px;
+            box-sizing: border-box;
         }
         .column {
-            width: 33.33%;
+            min-width: 0;
             min-height: 500px;
             padding: 10px;
             box-sizing: border-box;
+            overflow-wrap: anywhere;
         }
         .column1 {
             background-color: #B5D76A;
@@ -27,30 +37,36 @@
         .column3 {
             background-color: #D9A6DC;
         }
-        h2 {
-            text-align: center;
+        iframe {
+            max-width: 100%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <h1>Main Page Title</h1>
     <div class="container">
-        <!-- COLUMN 1 -->
+        <!-- FIRST COLUMN -->
         <div class="column column1">
             <h2>Title 1</h2>
-          <div id="ww_7c6333f4f8f9f" v='1.3' loc='id' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":["wl4529"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>More forecasts: <a href="https://meteolongue.com/paris_meteo_25_jours/" id="ww_7c6333f4f8f9f_u" target="_blank">Météo 25 jours</a></div><script async src="https://app3.weatherwidget.org/js/?id=ww_7c6333f4f8f9f"></script>
+            <!-- PASTE FIRST WEATHER WIDGET CODE HERE -->
         </div>
-        <!-- COLUMN 2 -->
+        <!-- SECOND COLUMN -->
         <div class="column column2">
             <h2>Title 2</h2>
-            <!-- PASTE YOUR SECOND WIDGET OR IMAGE HERE -->
+            <!-- PASTE YOUR IMAGE OR SECOND WIDGET HERE -->
         </div>
-        <!-- COLUMN 3 -->
+        <!-- THIRD COLUMN -->
         <div class="column column3">
             <h2>Title 3</h2>
-            <!-- PASTE THIRD WEATHERWIDGET.ORG CODE HERE -->
+            <!-- PASTE THIRD WEATHER WIDGET CODE HERE -->
         </div>
     </div>
 </body>
 </html>
+
+
 
