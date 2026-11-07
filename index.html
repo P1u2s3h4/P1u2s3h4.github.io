@@ -1,112 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Araa's webpage</title>
-
+    <title>My Main Page</title>
     <style>
-        #defaultBlock {
-            display: flex;
-            width: 100%;
+        body {
+            background-color: red;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
         }
-
-        #defaultBlock > div {
-            height: 600px;
+        h1 {
+            color: white;
+            padding: 15px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            width: 100%;
+            gap: 5px;
+            padding: 5px;
             box-sizing: border-box;
+        }
+        .column {
+            min-width: 0;
+            min-height: 500px;
             padding: 10px;
+            box-sizing: border-box;
+            overflow-wrap: anywhere;
         }
-
-        #block1 {
-            background-color: #F73678;
-            width: 30%;
+        .column1 {
+            background-color: #B5D76A;
         }
-
-        #block2 {
-            background-color: #FF80D2;
-            width: 40%;
+        .column2 {
+            background-color: #83D9D9;
         }
-
-        #block3 {
-            background-color: #FFABA8;
-            width: 30%;
+        .column3 {
+            background-color: #D9A6DC;
         }
-
-        h2 {
-            text-align: center;
+        iframe {
+            max-width: 100%;
         }
-
-        .weather-widget {
-            width: 100%;
-        }
-
-        .calendar {
-            width: 100%;
-            height: 450px;
-            border: none;
-        }
-
-        .sketch-container {
-            clear: both;
-            text-align: center;
-            padding: 20px;
-        }
-
-        #sketch {
-            width: 500px;
-            height: 500px;
-            border: none;
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.2/lib/p5.min.js"></script>
 </head>
-
 <body>
-
-    <main id="defaultBlock">
-        <p> 
-            <a href="./about.html">About Me!</a>
-        </p>
-
-        <div id="block1">
-
-            <h2>Weather</h2>
-
-             <div id="ww_a29b5fe74f32c" v='1.3' loc='id' a='{"t":"ticker","lang":"en","sl_lpl":1,"ids":["wl4531"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>More forecasts: <a href="https://oneweather.org/orlando/30_days/" id="ww_a29b5fe74f32c_u" target="_blank">Orlando weather 30-day forecast</a></div><script async src="https://app3.weatherwidget.org/js/?id=ww_a29b5fe74f32c"></script>
- </div>
-
-
-        <div id="block2">
-
-            <h2>Calendar</h2>
-
-            <iframe class="calendar"
-            src="https://calendar.google.com/calendar/embed?src=350388788%40tdsb.ca&ctz=America%2FToronto"
-            frameborder="0"
-            scrolling="no">
-            </iframe>
-
+    <h1>Main Page Title</h1>
+    <div class="container">
+        <!-- FIRST COLUMN -->
+        <div class="column column1">
+            <h2>Title 1</h2>
+            <!-- PASTE FIRST WEATHER WIDGET CODE HERE -->
         </div>
-
-
-        <div id="block3">
-
+        <!-- SECOND COLUMN -->
+        <div class="column column2">
+            <h2>Title 2</h2>
+            <!-- PASTE YOUR IMAGE OR SECOND WIDGET HERE -->
+        </div>
+        <!-- THIRD COLUMN -->
+        <div class="column column3">
             <h2>Title 3</h2>
-
-            <p>Welcome to my webpage!</p>
-
+            <!-- PASTE THIRD WEATHER WIDGET CODE HERE -->
         </div>
-
-    </main>
-
-
-    <div class="sketch-container"
-        id="sketch-container">
-
-        <h2>My p5.js Project</h2>
-        
     </div>
-<script src="sketch.js"></script>
 </body>
 </html>
 
-
-         
